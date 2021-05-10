@@ -11,7 +11,7 @@ LABEL com.github.actions.color="gray-dark"
 
 RUN apk add --no-cache curl bash libstdc++
 RUN curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
-RUN hasura update-cli v2.0.0-alpha.10
+RUN hasura update-cli --version v2.0.0-alpha.10
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
